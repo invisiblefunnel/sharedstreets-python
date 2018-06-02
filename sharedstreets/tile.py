@@ -26,11 +26,6 @@ class Tile:
         self.references = references
         self.metadata = metadata
 
-def truncate_id(id):
-    ''' Truncate SharedStreets hash to save space.
-    '''
-    return id[:12]
-
 def round_coord(float):
     ''' Round a latitude or longitude to appropriate length.
     '''
