@@ -15,9 +15,9 @@ protobuf_classes = [
 
 def main():
     args = parser.parse_args()
-    
+
     ProtobufClass = None
-    
+
     with open(args.filename, 'rb') as file:
         buffer = file.read()
         n = 0
@@ -29,7 +29,7 @@ def main():
             n = new_pos
             msg_buf = buffer[n:n+msg_len]
             n += msg_len
-            
+
             print('to', n, '--', msg_buf[:12].hex(), '...', msg_buf[-12:].hex())
 
             if ProtobufClass is None:
@@ -46,10 +46,10 @@ def main():
                             if test_object.nodeId == 0:
                                 # probably actually metadata
                                 continue
-                        
+
                         print('ok:', ProtobufClass)
                         break
-            
+
             print(' -' * 40)
 
             object = ProtobufClass()

@@ -16,4 +16,4 @@ parser = argparse.ArgumentParser(description='Run a local SharedStreets tile web
 
 def main():
     parser.parse_args()
-    app.run(debug=True)    
+    app.run(debug=True)

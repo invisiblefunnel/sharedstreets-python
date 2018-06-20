@@ -7,7 +7,7 @@ Python implementation of [SharedStreets Reference System](https://github.com/sha
 ## Install
 
 1.  Install [from PyPI with Pip](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi).
-    
+
         pip install sharedstreets
 
 2.  Try downloading a single tile to GeoJSON.
@@ -38,7 +38,7 @@ Install for local development.
     [Python virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenv) running Python 3.
 
 2.  Install the `sharedstreets` module, keeping it editable, and run test suite.
-    
+
         pip install --editable .
         python setup.py test
 
