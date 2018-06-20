@@ -216,15 +216,12 @@ def make_geojson(tile, id_length=12):
     
     for geometry in tile.geometries.values():
         geojson['features'].append(geometry_feature(geometry, tile.metadata[geometry.id], id_length))
-        #break
     
     for intersection in tile.intersections.values():
         geojson['features'].append(intersection_feature(intersection, id_length))
-        #break
     
     for reference in tile.references.values():
         geojson['references'].append(reference_feature(reference, id_length))
-        #break
     
     return geojson
 
